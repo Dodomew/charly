@@ -1,26 +1,29 @@
-<html>
+<!DOCTYPE html>
 
-    <head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Charly Bushoff</title>
+	
+	<meta name="Charly Bushoff portfolio" content="Charly Bushoff">
+	
+  <!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta charset="<?php bloginfo( 'charset' ); ?>">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="profile" href="http://gmpg.org/xfn/11">
-        <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
-        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-        <?php endif; ?>
-        <?php wp_head(); ?>
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+   <!-- Style sheet link -->
+	<link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" media="all" type="text/css" />
+	
+</head>
 
-    </head>
-    
-    <body>
+<body>
 
-        <div class="header-container">
-
-            <div class="header-block">
-
-                <img src="maxresdefault.jpg">
-
-            </div>
-
+    <div class="header-container">
+        
+        <div class="header-block">
+        
+            <img src="maxresdefault.jpg">
+            
         </div>
+
+    </div>
