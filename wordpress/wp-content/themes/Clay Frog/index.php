@@ -8,7 +8,11 @@
 		
 			<?php if ( is_home() ) : ?>
 		
+				<div class="plaatje">
+                    
 				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
+                    
+				</div><!-- .post-->
 		
 			<?php else : ?>
 
