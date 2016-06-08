@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
  
 <div class="index-container">
 
@@ -8,7 +9,7 @@
 		
 			<?php if ( is_home() ) : ?>
 		
-				<div class="plaatje">
+				<div class="featured-image">
                     
 				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
                     
@@ -50,20 +51,20 @@
 			
         <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
 
-            <nav class="navigation index">
+            <!--<nav class="navigation index">
 
                 <div class="alignleft"><?php next_posts_link( 'Older Entries' ); ?></div>
 
                 <div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
 
-            </nav><!--.navigation-->
+            </nav>--><!--.navigation-->
 			
         <?php else : ?>
 
     <?php endif; ?>
-
+    
+    </div>
 
 <?php get_sidebar(); ?>
-</div>
 
 <?php get_footer(); ?>

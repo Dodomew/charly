@@ -101,10 +101,9 @@ html, body
 
 .index-container
 {
-    width: 80%;
+    width: 100%;
     height: 70%;
     background-color: yellow;
-    display: inline-block;
 }
 
 .featured-image
