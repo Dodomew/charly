@@ -1,11 +1,30 @@
 <?php get_header(); ?>
 
  
+<?php get_sidebar(); ?>
+
+
 <div class="index-container">
 
     <?php if ( have_posts() ) : ?>
+    
+    <?php 
+    $counter = 0; // Start the counter
+    $maximumPosts = 6;
+?>
 
-        <?php while ( have_posts() ) : the_post(); ?>
+        <div class="featured-image-container">
+        <?php
+            
+            while ( have_posts() ) : the_post();
+            
+            if ( $counter == $maximumPosts)
+            {
+                break;
+            }
+            $counter++;
+            
+        ?>
 		
 			<?php if ( is_home() ) : ?>
 		
@@ -51,12 +70,10 @@
 			
         <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
 
+    </div>
             <!--<nav class="navigation index">
-
                 <div class="alignleft"><?php next_posts_link( 'Older Entries' ); ?></div>
-
                 <div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
-
             </nav>--><!--.navigation-->
 			
         <?php else : ?>
@@ -65,6 +82,5 @@
     
     </div>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

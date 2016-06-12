@@ -7,4 +7,5 @@
             <li><a href="">Contact me</a></li>
             
         </ul>
-
+        
+    </div>

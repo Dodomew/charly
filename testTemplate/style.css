@@ -110,20 +110,40 @@ html, body
 
 .featured-image-container
 {
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin: auto;
     background-color: blueviolet;
+    text-align: center;
 }
 
 .featured-image
 {
-    width: 25%;
-    height: 25%;
+    width: 300px;
+    height: 300px;
     margin: auto;
+    margin: 1vw;
     display: inline-block;
     padding: 0px;
     background-color: blue;
+}
+
+@media screen and (max-width: 719px)
+{
+    .featured-image
+    {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 479px)
+{
+    .featured-image
+    {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .featured-image img
