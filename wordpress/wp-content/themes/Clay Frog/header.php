@@ -22,7 +22,7 @@
         
         <div class="header-block">
         
-            <img src="maxresdefault.jpg">
+            <img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
             
         </div>
 
