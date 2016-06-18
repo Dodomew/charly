@@ -2,9 +2,10 @@
         
         <ul class="menu-list">
             
-            <li><a href="">Home</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact me</a></li>
+            <li><a href="http://charly.com/">Home</a></li>
+            <!--<li><a href="">Portfolio</a></li>
+            <li><a href="http://charly.com/contact-me/">Contact me</a></li>-->
+            <?php wp_list_pages( array( 'title_li' => '' ) ); ?>
             
         </ul>
         
