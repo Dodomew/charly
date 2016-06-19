@@ -7,9 +7,9 @@
     <?php if ( have_posts() ) : ?>
     
     <?php 
-    $counter = 0; // Start the counter
-    $maximumPosts = 6;
-?>
+        $counter = 0; // Start the counter
+        $maximumPosts = 10;
+    ?>
 
         <div class="featured-image-container">
         <?php
@@ -55,30 +55,20 @@
 						<?php wp_link_pages(); ?>
 
 					</div><!--. entry-->
-
-					<footer class="post-footer">
-
-						<div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
-
-					</footer><!--.post-footer-->
+					</div><!--. entry-->
 
 				</div><!-- .post-->
 
 			<?php endif; ?>
 			
         <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
-
-    </div>
-            <!--<nav class="navigation index">
-                <div class="alignleft"><?php next_posts_link( 'Older Entries' ); ?></div>
-                <div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
-            </nav>--><!--.navigation-->
 			
         <?php else : ?>
 
     <?php endif; ?>
-    
+
     </div>
 
+</div>
 
 <?php get_footer(); ?>

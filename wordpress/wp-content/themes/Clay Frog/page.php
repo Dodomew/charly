@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single posts
+ * The Template for displaying pages
  *
  * @package WordPress
  * @subpackage Clay Frog
@@ -13,6 +13,8 @@ get_sidebar();
 ?>
 
 <div class="single-post-body">
+    
+    <div class="index-container">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -50,8 +52,12 @@ get_sidebar();
                             endwhile;
             
                         ?>
-                            </div><!-- #content -->
+    </div><!-- #content -->
+    
+</div>
 
-                        <?php
+<?php
 
-get_footer();
+    get_footer();
+
+?>

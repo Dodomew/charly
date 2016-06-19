@@ -41,7 +41,7 @@ html, body
 {
     width: auto;
     height: 95%;
-    margin-top: 0.5vw;
+    padding: 0.5vw;
 }
 
 .menu-container
@@ -88,54 +88,6 @@ html, body
     color: aliceblue;
 }
 
-.menu-list li a.active
-{
-    background-color: red;
-    color: blue;
-}
-
-/*
-.menu-list
-{
-    font-family: 'Raleway', sans-serif;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-.menu-list li
-{
-    text-align: center;
-    margin: auto;
-    font-size: 1.5vw;
-    line-height: 5vw;
-}
-
-.menu-list li a
-{
-    display: block;
-    color: #000;
-    padding: 8px 0 8px 16px;
-    text-decoration: none;
-}
-
-.menu-list li a:hover:not(.active)
-{
-    background-color: rgb(55,51,15);
-    color: aliceblue;
-}
-
-.menu-list li a.active
-{
-    background-color: red;
-    color: blue;
-}
-*/
-
 .index-container
 {
     width: 100%;
@@ -143,14 +95,24 @@ html, body
     display: inline-block;
     margin: auto;
     background-color: rgba(255,251,236, 0.5);
+    padding: 1vw;
+}
+
+.index-container-portfolio-page
+{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: auto;
+    background-color: rgba(255,251,236, 0.5);
+    padding: 1vw;
 }
 
 .featured-image-container
 {
     width: 90%;
-    height: 100%;
+    height: auto;
     margin: auto;
-    text-align: center;
 }
 
 .featured-image
@@ -164,7 +126,7 @@ html, body
     padding: 0px;
 }
 
-@media only screen and (max-width: 479px)
+@media screen and (max-width: 480px)
 {
     .featured-image
     {   
@@ -173,12 +135,30 @@ html, body
     }
 }
 
-@media only screen and (max-width: 719px)
+@media screen and (min-width: 481px) and (max-width: 720px)
 {
     .featured-image
     {   
         width: 28vw;
         height: 28vw;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1080px)
+{
+    .featured-image
+    {   
+        width: 26vw;
+        height: 26vw;
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1200px)
+{
+    .featured-image
+    {   
+        width: 24vw;
+        height: 24vw;
     }
 }
 
@@ -221,7 +201,7 @@ html, body
 .footer-container
 {
     width: 100%;
-    height: 5%;
+    height: 4.5%;
     margin: 0 auto;
     padding: 0;
     clear: both;
@@ -229,11 +209,12 @@ html, body
 
 .contact-me-block
 {
-    width: 60%;
+    width: 20%;
     height: auto;
     margin: auto;
 }
 
+/* Als er 3 plaatjes zijn, gebruik deze code dan
 .contact-me-socialmedia
 {
     width: 33.3%;
@@ -242,13 +223,26 @@ html, body
     margin: auto;
     display: inline-block;
     text-align: center;
-    margin-top: 2.5%;
+    margin-top: 1vw;
+    
+}
+*/
+
+.contact-me-socialmedia
+{
+    width: 50%;
+    float: left;
+    height: auto;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1vw;
     
 }
 
 .contact-me-socialmedia img
 {
-    width: 15%;
+    width: 2vw;
     height: auto;
     margin: auto;
 }
