@@ -14,7 +14,7 @@ get_sidebar();
 
 <div class="single-post-body">
     
-    <div class="index-container">
+    <div class="index-container-single-post">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();

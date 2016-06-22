@@ -74,18 +74,23 @@ html, body
     float: left;
 }
 
+.menu-list li:hover
+{
+    background-color: rgb(151, 113, 85);
+ 
+}
+
 .menu-list li a
 {
     display: block;
     padding: 1vw;
-    color: #000;
+    color: rgb(10,10,10);
     text-decoration: none;
 }
 
-.menu-list li a:hover:not(.active)
+.menu-list li a:hover
 {
-    background-color: rgb(55,51,15);
-    color: aliceblue;
+       color: white;
 }
 
 .index-container
@@ -95,7 +100,7 @@ html, body
     display: inline-block;
     margin: auto;
     background-color: rgba(255,251,236, 0.5);
-    padding: 1vw;
+    text-align: center;
 }
 
 .index-container-portfolio-page
@@ -105,9 +110,17 @@ html, body
     display: inline-block;
     margin: auto;
     background-color: rgba(255,251,236, 0.5);
-    padding: 1vw;
+    text-align: center;
 }
 
+.index-container-single-post
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(255,251,236, 0.5);
+}
+    
 .featured-image-container
 {
     width: 90%;
@@ -129,36 +142,16 @@ html, body
 @media screen and (max-width: 480px)
 {
     .featured-image
-    {   
-        width: 30vw;
-        height: 30vw;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 720px)
-{
-    .featured-image
-    {   
-        width: 28vw;
-        height: 28vw;
-    }
-}
-
-@media screen and (min-width: 721px) and (max-width: 1080px)
-{
-    .featured-image
-    {   
-        width: 26vw;
-        height: 26vw;
-    }
-}
-
-@media screen and (min-width: 1081px) and (max-width: 1200px)
-{
-    .featured-image
-    {   
+    {
         width: 24vw;
-        height: 24vw;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 720px)
+{
+    .featured-image
+    {
+        width: 20vw;
     }
 }
 
@@ -171,19 +164,22 @@ html, body
 .single-post-body
 {
     overflow-x: hidden;
+    margin: auto;
+    text-align: center;
+    min-height: 70%;
 }
 
 .post-header
 {
-    color: red;
+    font-size: 2vw;
     text-align: center;
+    color: rgb(20,20,20);
 }
 
 .post
 {
     background-color: rgba(255,251,236, 0.5);
     margin: auto;
-    text-align: center;
     width: 100%;
     height: auto;
 }
@@ -193,18 +189,20 @@ html, body
     width: 60%;
     height: auto;
     margin: auto;
-    text-align: center;
-    color: bisque;
+    color: rgb(30,30,30);
     overflow: auto;
+    padding: 1vw;
+    font-size: 1vw;
 }
 
 .footer-container
 {
     width: 100%;
-    height: 4.5%;
+    height: 1vw;
     margin: 0 auto;
     padding: 0;
     clear: both;
+    bottom: 0;
 }
 
 .contact-me-block
@@ -236,7 +234,7 @@ html, body
     margin: auto;
     display: inline-block;
     text-align: center;
-    margin-top: 1vw;
+    margin-top: 0.25vw;
     
 }
 
@@ -246,3 +244,42 @@ html, body
     height: auto;
     margin: auto;
 }
+
+.footer-container p
+{
+    font-size: 12px;
+    margin: auto;
+    margin-top: 1vw;
+    width: 10%;
+    float: right;
+}
+.footer-container p a
+{
+    text-decoration: none;
+    color: rgb(10,10,10);
+}
+
+.hvr-border-fade 
+{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+    box-shadow: inset 0 0 0 0px #e1e1e1, 0 0 0px rgba(0, 0, 0, 1);
+    /* Hack to improve aliasing on mobile/tablet devices */
+}
+
+.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active 
+{
+    box-shadow: inset 0 0 0 8px rgb(180, 152, 131), 0 0 0px rgba(0, 0, 0, 0);
+    /* Hack to improve aliasing on mobile/tablet devices */
+}
+

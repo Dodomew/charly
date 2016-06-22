@@ -26,11 +26,13 @@
 		
 			<?php if ( is_home() ) : ?>
 		
-				<div class="featured-image">
+				<div class="hvr-border-fade">
+                    <div class="featured-image">
                     
-				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
+    				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
                     
-				</div><!-- .post-->
+				    </div><!-- .post-->
+                </div>
 		
 			<?php else : ?>
 
